@@ -24,18 +24,18 @@ if(isset($_POST['submit'])){
 </style>
 </head>
 <body>
-<?php
+
     
-echo "<pre>";
-echo "<center><h2><font face ='Arial'>Rekomendasi Pemilihan Laptop<br>Silakan Login </h2></center>";
-echo '<form method="POST" action="login.php">
-      <center > Username : <input type="Username" name="Username"></center>
-      <center > Nim          : <input type="Nim" name="Nim"></center><br>';
-echo $form_error; 
-echo'<center><input type="submit" name="submit" value="Login"></center>
-      </form>';
-echo"</pre>";
- ?>
+<pre>
+<center><h2><font face = Arial>Rekomendasi Pemilihan Laptop<br>Silakan Login </h2></center>
+<form method= POST action= login.php>
+<center > Username : <input type=Username name=Username></center>
+<center > Nim           : <input type=Nim name=Nim></center>
+<?php echo $form_error;?> 
+<center><input type=submit name=submit value=Login></center>
+      </form>
+</pre>
+
  
 </body>
 </html>

@@ -20,18 +20,16 @@ background-repeat: no-repeat;background-size: cover;}
 	</style>
      </head>
      <body>
-     <?php 
-     echo"<center><b><h1><font face='Algerian'color='#a52a2a'>Rekomendasi Pemilihan Laptop<h1></b><center>";
-	echo'<form method="post" action="Pelajar_MahasiswaUmum.php">';
-     echo'<center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Pelajar/ Mahasiswa Umum</font></button></center></form>';	
-     echo'<form method="post" action="Editing_Video.php">';
-	echo'<center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Editing Video</font></button></center></form>';
-     echo'<form method="post" action="Programmer.php">';
-     echo'<center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Programmer</font></button></center></form>';  
-     echo "<form method='post' action='Login.php'><button type='submit'>Logout</button>";
-     echo "<marquee direction='left'><font face='Forte' size='5' color='red'>--Selamat Datang di Rekomendasi Pemilihan Laptop--</font></marquee>";
-     
-    ?>  
+  
+     <center><b><h1><font face=Algerian color= #a52a2a >Rekomendasi Pemilihan Laptop<h1></b></center>
+	<form method="post" action="Pelajar_MahasiswaUmum.php">
+     <center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Pelajar/ Mahasiswa Umum</font></button></center><br></form>	
+     <form method="post" action="Editing_Video.php">
+	<center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Editing Video</font></button></center><br></form>
+     <form method="post" action="Programmer.php">
+     <center><button class="btn_style btn_brown" type="submit"><font face= "Arial Black">Programmer</font></button></center><br></form> 
+     <center><form method='post' action='Login.php'><button type='submit'>Logout</button></center>
+     <marquee direction='left'><font face='Forte' size='5' color='red'>--Selamat Datang di Rekomendasi Pemilihan Laptop--</font></marquee>
      </body>
 </html>
 

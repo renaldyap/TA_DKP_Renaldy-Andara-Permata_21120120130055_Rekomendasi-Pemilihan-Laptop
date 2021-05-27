@@ -6,16 +6,17 @@ background-repeat: no-repeat;background-size: cover;}
 </style>
 </head>
 <body>
+<pre>
+<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>
+<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Pelajar/Mahasiswa Umum---</font></h2></b></marquee>
+<form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>
 <?php
 include 'Class_Pelajar.php';
 $Laptop1 = new LaptopPelajar("15.6 inch, HD (1366 x 768)", "AMD Athlon™ Gold 3150U", "AMD Radeon™ Graphics","4 GB DDR4","256 GB SSD","3-cell, 41 Wh Li-ion",5950000);
 $Laptop2 = new LaptopPelajar("15,6 inch HD (1366 x 768)", "AMD Athlon Silver 3050U", "Intel® UHD Graphics","8 GB DDR4","1 TB HDD","41wh",6300000);
 $Laptop3 = new LaptopPelajar("14 inch HD (1366 x 768) ", "Intel Celeron N4020 dual-core ", "Intel UHD Graphics 600","4 GB DDR4","1 TB SATA III 5400rpm HDD","2-cell,Li-ion 41wh",5500000);
 
-echo "<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>";
-echo "<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Pelajar/Mahasiswa Umum---</font></h2></b></marquee>";
-echo " <form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>";
-echo "<pre>";
+
 echo "<h2><b>1. Hp 15 Athlon Gold 3150U </b></h2>";                                      
 echo "<table>";
 echo "<img src= 'Laptop1.jpg'  alt= 'Laptop1.jpg'  width='250' height='190' border= '2' /> <br>";
@@ -92,8 +93,9 @@ echo "Ram          : " , $Laptop3->getRam() . "<br>";
 echo "Storage      : " , $Laptop3->getStorage() . "<br>";
 echo "Baterai      : " , $Laptop3->getBaterai() . "<br>";
 echo "Harga        : Rp." , $Laptop3->getHarga() . "<br>";
-echo "</pre>";
+
 ?>
+</pre>
 </body>
 </html>
 

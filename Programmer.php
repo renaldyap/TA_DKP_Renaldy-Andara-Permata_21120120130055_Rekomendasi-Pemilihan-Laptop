@@ -6,6 +6,10 @@ background-repeat: no-repeat;background-size: cover;}
 </style>
 </head>
 <body>
+<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>
+<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Programmer---</font></h2></b></marquee>
+<form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>
+<pre>
 <?php
 include 'Class_Pelajar.php';
 $Laptop1 = new LaptopPelajar("13.5 inch (3000 x 2000)", "Intel® Core™ i7-1165G7", "Intel® Iris® Xe Graphics","16 GB LPDDR4-3200","2 TB SSD","4-cell, 66 Wh Li-ion polymer",25000000);
@@ -17,10 +21,7 @@ $LaptopSemua=[$Laptop1,$Laptop2,$Laptop3,$Laptop4,$Laptop5];
 $Gambar=["Laptop1P.jpg","Laptop2P.jpg","Laptop3P.jpg","Laptop4P.jpg","Laptop5.jpg"];
 $Nomor=[1,2,3,4,5];
 $Judul=["HP Spectre x360 14 i7 1165G7","Dell Inspiron 5406 i7 1165G7","Acer Swift 3 Infinity i7 1165G7","Lenovo Yoga Slim 7 Ryzen 7 4800U","MSI Modern 14 B11SB i7 1165G7"];
-echo "<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>";
-echo "<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Programmer---</font></h2></b></marquee>";
-echo " <form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>";
-echo "<pre>";
+
 for  ($i=0; $i<count($LaptopSemua),$i<count($Gambar),$i<count($Nomor),$i<count($Judul);$i++){
 echo "<h2>$Nomor[$i].".$Judul[$i]. "</h2><br>";                                      
 echo "<table>";
@@ -36,8 +37,9 @@ echo "Baterai      : " , $LaptopSemua[$i]->getBaterai() . "<br>";
 echo "Harga        : Rp." , $LaptopSemua[$i]->getHarga() . "<br>";
 echo "";
 }
-echo "</pre>";
+
 ?>
+</pre>
 </body>
 </html>
 

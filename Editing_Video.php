@@ -6,6 +6,10 @@ background-repeat: no-repeat;background-size: cover;}
 </style>
 </head>
 <body>
+<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>
+<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Editing Video--</font></h2></b></marquee>
+<form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>
+<pre>
 <?php
 
 $NamaLaptop= ["ASUS ZenBook Pro Duo UX482EG","Dell XPS 15 9500","Apple MacBook Pro M1","Lenovo Yoga Slim 7i Carbon","Asus ROG Zephyrus Duo 15"];
@@ -19,10 +23,7 @@ $harga=[24500000,23999000,24600000,20300000,48600000];
 $Gambar=["Laptop1E.jpg","Laptop2E.jpg","Laptop3E.jpg","Laptop4E.jpg","Laptop5E.jpg"];
 $Nomor=[1,2,3,4,5];
 
-echo "<center><h1><b><font face='Algerian'color='#a52a2a'>---Rekomendasi Pemilihan Laptop---</font></b></h1></center>";
-echo "<marquee direction='left'><h2><b><font face='Forte' color='#a52a2a'>---Laptop Editing Video--</font></h2></b></marquee>";
-echo " <form method='post' action='Rekomendasi_Pemilihan_Laptop.php'><button type='submit'>Home</button>";
-echo "<pre>";
+
 for ($i = 0; $i < count($NamaLaptop),$i < count($UkuranLayar),$i < count($Processor),$i < count($GraphicChard),$i < count($Ram),$i < count($Storage),$i < count($Baterai),$i < count($harga),$i < count($Gambar),$i < count($Nomor); $i++) {
 echo  "<h2> $Nomor[$i].".$NamaLaptop[$i]."</h2><br>";
 echo "<table>";
@@ -37,7 +38,8 @@ echo "Storage      : " , $Storage[$i] . "<br>";
 echo "Baterai      : " , $Baterai[$i]. "<br>";
 echo "Harga        : Rp." , $harga[$i]. "<br>";
 echo "<br>";}
-echo "</pre>";
+
 ?>
+</pre>
 </body>
 </html>
